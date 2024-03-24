@@ -1,0 +1,6 @@
+<p-accordion [activeIndex]="0">
+    <p-accordionTab class="p-accordion" header="Departure Time"> 
+       <p-slider [(ngModel)]="rangeValues" [min]="50" [max]="1200" [range]="true" (onChange)="updateTime()"></p-slider>
+        <div class="timing"> <h5>{{ selectedTime }}</h5></div>
+    </p-accordionTab>
+</p-accordion>

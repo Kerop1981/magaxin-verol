@@ -1,0 +1,5 @@
+<p-accordion  [activeIndex]="0">
+<p-accordionTab class="p-accordion" header="Price"> 
+<h5>$ {{rangeValues[0] + ' - ' + rangeValues[1]}}</h5>
+<p-slider  [(ngModel)]="rangeValues" [min]="50" [max]="1200" [range]="true"></p-slider>
+</p-accordionTab>

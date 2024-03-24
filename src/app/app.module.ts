@@ -12,6 +12,16 @@ import { TemplatingComponent } from './scelta/basic/templating/templating.compon
 import { KalendarComponent } from './scelta/kalendar/kalendar.component';
 import {CheckboxModule} from 'primeng/checkbox';
 import { PasangerComponent } from './scelta/pasanger/pasanger.component';
+import {ButtonModule} from 'primeng/button';
+import { FiltersComponent } from './filters/filters.component';
+import { PriceComponent } from './filters/price/price.component';
+import { DeparturetimeComponent } from './filters/departuretime/departuretime.component';
+import { RatingComponent } from './filters/rating/rating.component';
+import { AirlinesComponent } from './filters/airlines/airlines.component';
+import {SliderModule} from 'primeng/slider';
+import { AccordionModule } from 'primeng/accordion';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { TripsComponent } from './filters/trips/trips.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +30,12 @@ import { PasangerComponent } from './scelta/pasanger/pasanger.component';
     TemplatingComponent,
     KalendarComponent,
     PasangerComponent,
+    FiltersComponent,
+    PriceComponent,
+    DeparturetimeComponent,
+    RatingComponent,
+    AirlinesComponent,
+    TripsComponent,
     
   ],
   imports: [
@@ -30,6 +46,10 @@ import { PasangerComponent } from './scelta/pasanger/pasanger.component';
     CascadeSelectModule,
     CalendarModule,
     CheckboxModule,
+    ButtonModule,
+    SliderModule,
+    AccordionModule,
+    SelectButtonModule,
    
   ],
   exports: [SceltaComponent],

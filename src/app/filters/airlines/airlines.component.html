@@ -1,0 +1,24 @@
+
+<p-accordion  [activeIndex]="0">
+    <p-accordionTab class="p-accordion" header="Airlines"> 
+<div class="checkbox-container">
+    <div class="field-checkbox">
+    <p-checkbox name="group1" value="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox>
+    <label for="ny" class="gap">Emirated</label>
+    </div>
+    <div class="field-checkbox">
+    <p-checkbox name="group1" value="San Francisco" [(ngModel)]="selectedCities" inputId="sf"></p-checkbox>
+    <label for="sf" class="gap">Fly Dubai</label>
+    </div>
+    <div class="field-checkbox">
+    <p-checkbox name="group1" value="Los Angeles" [(ngModel)]="selectedCities" inputId="la"></p-checkbox>
+    <label for="la" class="gap">Qatar</label>
+    </div>
+    <div class="field-checkbox">
+    <p-checkbox name="group1" value="Chicago" [(ngModel)]="selectedCities" inputId="ch"></p-checkbox>
+    <label for="ch" class="gap">Etihad</label>
+    </div>
+</div>
+</p-accordionTab>
+</p-accordion>
+
