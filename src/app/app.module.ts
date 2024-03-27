@@ -22,6 +22,10 @@ import {SliderModule} from 'primeng/slider';
 import { AccordionModule } from 'primeng/accordion';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { TripsComponent } from './filters/trips/trips.component';
+import { TabmenuComponent } from './tabmenu/tabmenu.component';
+import { TabMenuModule } from 'primeng/tabmenu';
+import {   RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,6 +40,7 @@ import { TripsComponent } from './filters/trips/trips.component';
     RatingComponent,
     AirlinesComponent,
     TripsComponent,
+    TabmenuComponent,
     
   ],
   imports: [
@@ -50,10 +55,13 @@ import { TripsComponent } from './filters/trips/trips.component';
     SliderModule,
     AccordionModule,
     SelectButtonModule,
+    TabMenuModule,
+    RouterModule,
+    CommonModule
    
   ],
   exports: [SceltaComponent],
-  providers: [],
+  providers: [ RouterModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
