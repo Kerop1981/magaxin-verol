@@ -23,6 +23,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets"
+
             ],
             "styles": [
               "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
