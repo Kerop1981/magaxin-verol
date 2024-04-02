@@ -1,0 +1,11 @@
+<span class="p-float-label">
+    <h5>Pasanger-Class</h5>
+     <p-cascadeSelect 
+       [(ngModel)]="selectedFlight"
+       [options]="flightOptions"
+       optionGroupLabel="company" 
+       [optionGroupChildren]="['states']"
+       [style]="{'minWidth': '14rem'}" 
+       placeholder="Pasanger-Class">
+     </p-cascadeSelect>
+   </span>
