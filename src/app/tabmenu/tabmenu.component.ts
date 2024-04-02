@@ -18,7 +18,8 @@ ngOnInit(){
     {label: 'Cheapest',icon:'pi pi-fw pi-home'},
     {label:'Best',icon:'pi pi-fw pi-calendar'},
     {label:'Quickest',icon:'pi pi-fw pi-pencil'},
-    {label:'Other sort',icon:'pi pi-fw pi-file'}
+    {label:'Other sort',icon:'pi pi-fw pi-file'},
+    {label: 'Menu', icon: 'pi pi-fw pi-cog'}
   ];
   this.activeItem = this.items[0]
 }

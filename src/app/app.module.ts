@@ -26,6 +26,9 @@ import { TabmenuComponent } from './tabmenu/tabmenu.component';
 import { TabMenuModule } from 'primeng/tabmenu';
 import {   RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { MainPageComponent } from './main-page/main-page.component';
+import { FlightCardComponent } from './flight/flight-card/flight-card.component';
+import { FlightListComponent } from './flight/flight-card/flight-list/flight-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,6 +44,9 @@ import { CommonModule } from '@angular/common';
     AirlinesComponent,
     TripsComponent,
     TabmenuComponent,
+    MainPageComponent,
+    FlightCardComponent,
+    FlightListComponent,
     
   ],
   imports: [
@@ -56,10 +62,14 @@ import { CommonModule } from '@angular/common';
     AccordionModule,
     SelectButtonModule,
     TabMenuModule,
-    RouterModule,
-    CommonModule
-   
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: MainPageComponent
+      }
+    ])
   ],
+  
   exports: [SceltaComponent],
   providers: [ RouterModule],
   bootstrap: [AppComponent]
