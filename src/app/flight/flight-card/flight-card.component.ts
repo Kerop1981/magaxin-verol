@@ -7,7 +7,7 @@ import { ApiflightService, Companions } from '../apiflight.service';
   providers: [ApiflightService]
 })
 export class FlightCardComponent {
-  flights! : Companions[];
+  flights = this.apiflightService.flights;
 
   constructor(private apiflightService: ApiflightService){}
 }
