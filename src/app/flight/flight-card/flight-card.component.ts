@@ -8,7 +8,7 @@ import { Companions } from '../apiflight.service';
   styleUrls: ['./flight-card.component.css'],
 })
 export class FlightCardComponent {
-@Input() flight!: Companions;
+
 @Input() logoUrl: string = ''
 @Input() price: number = 0
 @Input() time: string = ''
