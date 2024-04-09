@@ -1,6 +1,14 @@
-<div class="card">
-    <img [src]="logoUrl" alt="logo">
-    <div>
-       
+<div class="card" *ngIf="flight">
+    <img  class="photo" [src]="flight.logoUrl" alt="logo">
+    <div class="p-text">
+        <p class="p1">4.2</p>
+        <p class="p2"> Very Good</p>
+        <p class="p3">54 reviews</p>
+    </div>
+    <div class="time-text">
+        {{flight.time}}
+    </div>
+    <div class="price-text">
+        ${{flight.price}}
     </div>
 </div>

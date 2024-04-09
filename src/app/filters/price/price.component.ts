@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-price',
@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class PriceComponent {
   rangeValues: number[] = [50,1200];
+  @Output() priceChange = new EventEmitter<number[]>();
   updateRange() {
     console.log('Updated Range:', this.rangeValues);
+  }
+
+  onPriceChange(event: any){
+    this.priceChange.emit(this.rangeValues);
   }
 }

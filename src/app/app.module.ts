@@ -29,6 +29,7 @@ import { CommonModule } from '@angular/common';
 import { MainPageComponent } from './main-page/main-page.component';
 import { FlightCardComponent } from './flight/flight-card/flight-card.component';
 import { FlightListComponent } from './flight/flight-list/flight-list.component';
+
 ;
 @NgModule({
   declarations: [
@@ -68,7 +69,9 @@ import { FlightListComponent } from './flight/flight-list/flight-list.component'
         path: '',
         component: MainPageComponent
       }
-    ])
+    ]),
+   
+
   ],
   
   exports: [ScelltaComponent],
