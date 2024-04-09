@@ -6,13 +6,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./price.component.css']
 })
 export class PriceComponent {
-  rangeValues: number[] = [50,1200];
-  @Output() priceChange = new EventEmitter<number[]>();
+  rangeValues: number[] = [100,150];
   updateRange() {
     console.log('Updated Range:', this.rangeValues);
   }
 
-  onPriceChange(event: any){
-    this.priceChange.emit(this.rangeValues);
-  }
 }
