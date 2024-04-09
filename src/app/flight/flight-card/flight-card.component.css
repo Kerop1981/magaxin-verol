@@ -1,0 +1,43 @@
+:host{
+    display: block;
+  
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    height: 150px;
+}
+.time-text{
+    font-weight: bold;
+    font-weight: 700;
+    
+}
+
+.price-text{
+    font-size: 24px;
+    font-weight: bold;
+    font-weight: 800;
+    color:#FF8682;
+   
+}
+
+.p1{
+    border: 2px solid #8DD3BB;
+    border-radius: 5px;
+}
+.p2{
+    font-weight: bold;
+    font-weight: 700;
+    
+}
+
+.p-text{
+    display: flex;
+    margin-bottom: 100px;
+    margin-right: 290px;
+}

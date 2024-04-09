@@ -1,13 +1,18 @@
 import { Component, Input } from '@angular/core';
-import { ApiflightService, Companions } from '../apiflight.service';
+import { Companions } from '../apiflight.service';
+
+
 @Component({
   selector: 'app-flight-card',
   templateUrl: './flight-card.component.html',
   styleUrls: ['./flight-card.component.css'],
-  providers: [ApiflightService]
 })
 export class FlightCardComponent {
-  flights = this.apiflightService.flights;
+@Input() flight!: Companions;
+@Input() logoUrl: string = ''
+@Input() price: number = 0
+@Input() time: string = ''
 
-  constructor(private apiflightService: ApiflightService){}
+
+
 }

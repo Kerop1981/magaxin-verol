@@ -1,0 +1,7 @@
+<app-flight-card 
+class="card-app"
+    *ngFor="let flight of flights" 
+    [logoUrl]="flight.logoUrl"
+    [price]="flight.price"
+    [time]="flight.time">
+</app-flight-card>
